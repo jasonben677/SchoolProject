@@ -1,0 +1,27 @@
+{
+  "name": "schoolproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch src/client/*.* --exec \"npm run build\"",
+    "build": "npm run copy:html && npm run copy:jpg && npm run build:ts && npm run build:scss",
+    "copy:html": "copyfiles --flat src/client/*.html dist/client",
+    "copy:jpg": "copyfiles --flat src/client/*.jpg dist/client",
+    "build:ts": "tsc",
+    "build:scss": "node-sass --quiet --recursive src/client --output dist/client --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.2.11",
+    "@types/node": "^8.0.24",
+    "copyfiles": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  }
+}
