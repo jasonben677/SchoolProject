@@ -6,7 +6,7 @@
         "outDir": "dist/client",
         "allowSyntheticDefaultImports": false
     },
-    "include":[
+    "include": [
         "src/client/**/*.ts"
     ]
 }

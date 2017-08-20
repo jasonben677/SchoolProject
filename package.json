@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --watch src/client/*.* --exec \"npm run build\"",
-    "build": "npm run copy:html && npm run copy:jpg && npm run build:ts && npm run build:scss",
+    "build": "npm run copy:html && npm run copy:jpg && npm run build:scss",
     "copy:html": "copyfiles --flat src/client/*.html dist/client",
-    "copy:jpg": "copyfiles --flat src/client/*.jpg dist/client",
+    "copy:jpg": "copyfiles --flat src/client/images/*.jpg dist/client/images",
     "build:ts": "tsc",
-    "build:scss": "node-sass --quiet --recursive src/client --output dist/client --output-style compressed"
+    "build:scss": "node-sass --quiet --recursive src/client/assets/sass --output dist/client/assets/css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
