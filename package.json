@@ -6,9 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --watch src/client/*.* --exec \"npm run build\"",
-    "build": "npm run copy:html && npm run copy:jpg && npm run build:scss",
+    "build": "npm run copy:html && npm run copy:jpg && npm run build:scss && npm run copy:jquery && npm run copy:jquery_ie",
     "copy:html": "copyfiles --flat src/client/*.html dist/client",
     "copy:jpg": "copyfiles --flat src/client/images/*.jpg dist/client/images",
+    "copy:jquery": "copyfiles --flat src/client/assets/js/*.js dist/client/assets/js",
+    "copy:jquery_ie": "copyfiles --flat src/client/assets/js/ie/*.js dist/client/assets/js/ie",
     "build:ts": "tsc",
     "build:scss": "node-sass --quiet --recursive src/client/assets/sass --output dist/client/assets/css --output-style compressed"
   },
