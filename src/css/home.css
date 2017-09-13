@@ -26,10 +26,17 @@
             padding: 15px;
             height: auto;
         }
+        .word {
+            font-weight: bold;
+            font-size: 200%;
+        }
         /* 文章內容的部分 */
 
         .article {
+           padding-top: 20px;
            background-color: whitesmoke;
+           /* 滑鼠變成手指 */
+           cursor: pointer;
         }
         /* On small screens, set height to 'auto' for sidenav and grid */
 
