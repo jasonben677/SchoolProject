@@ -1,5 +1,5 @@
 // html結合
-$(function () {
+$(document).on('ready', function () {
     $("#contacts-section").load("footer.html");
     $(".pro_contents").load("pro_contents.html");
     $(".copyright").load("copyright.html");
