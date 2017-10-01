@@ -3,7 +3,7 @@
 
 <head>
   <!-- Title -->
-  <title>個人資訊</title>
+  <title>文章詳細</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -26,7 +26,6 @@
   <link rel="stylesheet" href="../../assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
-
 
   <!-- CSS Unify -->
   <link rel="stylesheet" href="../../assets/css/unify-core.css">
@@ -51,7 +50,7 @@
             <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button"
               aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
               <span class="hamburger hamburger--slider">
-            <span class="hamburger-box">
+              <span class="hamburger-box">
               <span class="hamburger-inner"></span>
               </span>
               </span>
@@ -59,7 +58,7 @@
             <!-- End Responsive Toggle Button -->
 
             <!-- Logo -->
-            <a href="../article/article.html" class="navbar-brand">
+            <a href="article.html" class="navbar-brand">
               <img src="../../assets/img/logo/car.jpg" width="103" height="39" alt="Image Description">
             </a>
             <!-- End Logo -->
@@ -70,15 +69,21 @@
 
                 <!-- article -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="../article/article.html" class="nav-link g-py-7 g-px-0">文章列表</a>
+                  <a href="article.html" class="nav-link g-py-7 g-px-0">文章列表</a>
                 </li>
                 <!-- End article -->
 
-                <!-- member -->
+                <!-- Intro -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="profile.html" class="nav-link g-py-7 g-px-0">會員中心</a>
+                  <a href="../pages/profile.html" class="nav-link g-py-7 g-px-0">會員中心</a>
                 </li>
-                <!-- End member -->
+                <!-- End Intro -->
+
+                <!-- login -->
+                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                  <a href="../login_signup/login.html" class="nav-link g-py-7 g-px-0">登入</a>
+                </li>
+                <!-- End login -->
 
               </ul>
             </div>
@@ -90,73 +95,96 @@
     </header>
     <!-- End Header -->
 
-    <!-- Breadcrumb -->
-    <section class="g-my-30">
-      <div class="container">
-        <ul class="u-list-inline">
-          <li class="list-inline-item g-mr-7">
-            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">樂乘</a>
-            <i class="fa fa-angle-right g-ml-7"></i>
-          </li>
-          <li class="list-inline-item g-mr-7">
-            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">會員中心</a>
-            <i class="fa fa-angle-right g-ml-7"></i>
-          </li>
-          <li class="list-inline-item g-color-primary">
-            <span>個人資訊</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- End Breadcrumb -->
-
     <section class="g-mb-100">
       <div class="container">
         <div class="row">
           <!-- Profile Sidebar -->
-          <div class="col-lg-3 g-mb-50 g-mb-0--lg">
-            <!-- User Image -->
-            <div class="u-block-hover g-pos-rel">
-              <figure>
-                <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="../../assets/img-temp/400x450/img5.jpg" alt="Image Description">
-              </figure>
-
-              <!-- User Info -->
-              <span class="g-pos-abs g-top-20 g-left-0">
-                  <a class="btn btn-sm u-btn-primary rounded-0" href="#">小胖</a>
-                  <small class="d-block g-bg-black g-color-white g-pa-5">中原國貿系</small>
-                </span>
-              <!-- End User Info -->
-            </div>
-            <!-- User Image -->
-
-            <!-- Sidebar Navigation -->
-            <div class="list-group list-group-border-0 g-mb-40">
-
-              <!-- Profile -->
-              <a href="profile.html" class="list-group-item justify-content-between active">
-                <span><i class="fa fa-address-book" aria-hidden="true"></i>                  
-                  個人資訊</span>
-              </a>
-              <!-- End Profile -->
-
-              <!-- Comments -->
-              <a href="comments.html" class="list-group-item list-group-item-action justify-content-between">
-                <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 訊息</span>
-                <span class="u-label g-font-size-11 g-bg-pink g-rounded-20 g-px-8">5</span>
-              </a>
-
-              <!-- End Comments -->
-
-
-            </div>
-            <!-- End Sidebar Navigation -->
-
+          <div class="g-mb-50 g-mb-0--lg">
           </div>
           <!-- End Profile Sidebar -->
 
           <!-- Profle Content -->
-          <div class="col-lg-9 pro_contents"></div>
+          <div class="col-lg-12">
+            <!-- User Block -->
+
+            <div class="g-brd-around g-brd-gray-light-v4 g-pa-20 g-mb-40">
+              <div class="row">
+
+                <div class="col-lg-3 g-mb-40 g-mb-0--lg">
+                  <!-- User Image -->
+                  <div class="g-mb-20">
+                    <img class="img-fluid w-100" src="../../assets/img-temp/400x450/img6.jpg" alt="Image Description">
+                  </div>
+                  <!-- User Image -->
+
+                  <!-- User Contact Buttons -->
+
+                  <a class="btn btn-block u-btn-outline-primary g-rounded-50 g-py-12 g-mb-10" href="#">
+                      <i class="fa fa-users g-pos-rel g-top-1 g-mr-5"></i> 車主資料
+                  </a>
+                  <!-- End User Contact Buttons -->
+
+                </div>
+
+                <div class="col-lg-9">
+
+                  <!-- User Details -->
+                  <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
+                    <h3 class="g-font-weight-300 g-mr-10">台北車站 → 中原大學</h3>
+                  </div>
+                  <!-- End User Details -->
+
+                  <!-- User Info -->
+                  <ul class="list-inline g-font-weight-300">
+                    <li class="list-inline-item g-mr-20">
+                      <i class="icon-location-pin g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 轎車
+                    </li>
+                    <li class="list-inline-item g-mr-20">
+                      <i class="icon-check g-pos-rel g-top-1 g-color-gray-dark-v5 g-mr-5"></i> 大雄
+                    </li>
+                  </ul>
+                  <!-- End User Info -->
+
+                  <!-- User Position -->
+                  <h4 class="h6 g-font-weight-300 g-mb-10">
+                    <i class="icon-badge g-pos-rel g-top-1 g-mr-5 g-color-gray-dark-v5"></i> 9/15 週五 上午:7:15
+                  </h4>
+                  <!-- End User Position -->
+
+
+                  <hr class="g-brd-gray-light-v4 g-my-20">
+
+                  <p class="lead g-line-height-1_8">
+                    本車是5人坐的轎車<br/> 由車主大雄開車從台北車站 → 中原大學<br/> 本車禁煙!禁酒!禁食!
+                    <br/> 要帶寵物請用籠子帶好噢!
+                    <br/> 請維護車內清潔，垃圾請自行帶下車
+                  </p>
+
+                  <hr class="g-brd-gray-light-v4 g-my-20">
+
+                  <p class="lead g-line-height-1_8">還有2位</p>
+                  <a href="#"><img src="../../assets/img/icons/chair.png" class="img-circle" alt="Cinque Terre" width="60" height="50"></a>
+                  <a href="#"><img src="../../assets/img/icons/chair.png" class="img-circle" alt="Cinque Terre" width="60" height="50"></a>
+                  <br/>
+                  <button type="button" class="btn btn-success" onclick="location.href='#'">馬上訂位</button>
+
+                </div>
+              </div>
+            </div>
+            <!-- End User Block -->
+
+            <!-- Experience Timeline -->
+            <div class="card border-0 rounded-0 g-mb-40">
+              <!-- Panel Header -->
+              <div class="card-header d-flex align-items-center justify-content-between g-bg-gray-light-v5 border-0 g-mb-15">
+                <h3 class="h6 mb-0">
+                  <i class="fa fa-map g-pos-rel g-top-1 g-mr-5"></i> 地圖
+                </h3>
+              </div>
+              <!-- End Panel Header -->
+            </div>
+            <!-- End Experience Timeline -->
+          </div>
           <!-- End Profle Content -->
         </div>
       </div>
@@ -170,11 +198,11 @@
     <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20 copyright"></footer>
     <!-- End Copyright Footer -->
     <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
-     "bottom": 15,
-     "right": 15
-   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
-      <i class="hs-icon hs-icon-arrow-top"></i>
-    </a>
+           "bottom": 15,
+           "right": 15
+        }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="fa fa-arrow-up"></i>
+        </a>
   </main>
 
   <div class="u-outer-spaces-helper"></div>
@@ -202,12 +230,19 @@
   <script src="../../assets/js/components/hs.scrollbar.js"></script>
   <script src="../../assets/js/components/hs.chart-pie.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
 
   <!-- JS Customization -->
   <script src="../../assets/js/custom.js"></script>
 
   <!-- JS Plugins Init. -->
-  <script src="../../assets/js/profile.js"></script>
+  <script src="../../assets/js/article_content.js"></script>
+
+
+
+
+
+
 
 </body>
 
