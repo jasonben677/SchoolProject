@@ -3,6 +3,7 @@ $(document).on('ready', function () {
     $("#contacts-section").load("footer.html");
     $(".pro_contents").load("pro_contents.html");
     $(".copyright").load("copyright.html");
+    $(".pro_contents2").load("pro_contents2.html");
 });
 
 $(document).on('ready', function () {
