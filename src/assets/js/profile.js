@@ -5,6 +5,7 @@ $(document).on('ready', function () {
     $(".copyright").load("copyright.html");
 });
 
+
 $(document).on('ready', function () {
     // initialization of go to
     $.HSCore.components.HSGoTo.init('.js-go-to');
@@ -29,8 +30,9 @@ $(window).on('load', function () {
         event: 'hover',
         pageContainer: $('.container'),
         breakpoint: 991
+        
     });
-
+    
     // initialization of horizontal progress bars
     setTimeout(function () { // important in this case
         var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress-bar', {
