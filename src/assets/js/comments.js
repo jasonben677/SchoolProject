@@ -1,7 +1,7 @@
 // html結合
 $(function () {
   $("#contacts-section").load("footer.html");
-  $(".com_comments").load("com_comments.html");
+  
   $(".copyright").load("copyright.html");
 });
 
